@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Account from '../views/Account.vue'
+
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,11 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/Account',
+    name: 'Account',
+    component: Account
   },
   {
     path: '/about',
