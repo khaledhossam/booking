@@ -1,5 +1,6 @@
 <template>
   <div >
+     <nav-bar ></nav-bar>
     <container class="container-fluid">
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group
@@ -47,7 +48,16 @@
 </template>
 
 <script>
+
+import NavBar from '@/components/NavBar.vue'
+
   export default {
+
+components: {
+    "nav-bar":NavBar,
+    
+  },
+
     data() {
       return {
         form: {
@@ -81,13 +91,11 @@
 </script>
 
 <style>
-.img-fluid {
-  position: relative;
-}
+
 .container-fluid{
     float: right;
     width: 50%;
-    position: fixed;
+    padding-top: 50px;
   
 }
 

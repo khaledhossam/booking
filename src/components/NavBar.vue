@@ -25,7 +25,7 @@
         <b-nav-item to="/About" > About Us </b-nav-item>
         <b-nav-item> Voucher </b-nav-item>
         <b-nav-item to="/Account"> Sign Up </b-nav-item>
-        <b-nav-item to="@/SignIn.vue"> Sign In </b-nav-item>
+        <b-nav-item to="/Account"> Sign In </b-nav-item>
         </b-navbar-nav>
     </b-navbar>
     </div>
